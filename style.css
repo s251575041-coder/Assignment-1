@@ -1,0 +1,344 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  
+}
+
+body{
+  background: black;
+  font-family: Verdana;
+  color: white;
+  padding-top: 70px;
+}
+
+
+
+.navbar{
+  width: 100%;
+  background: black;
+  padding: 15px 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 1000;
+}
+
+.logo{
+  color: white;
+}
+
+
+.navlinks{
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navlinks li{
+  list-style: none;
+}
+
+.navlinks a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.navlinks a:hover{
+  color: rgb(167, 98, 98);
+}
+
+
+.kotak1 img {
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.kotak {
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  justify-content: center;
+  gap: 25px;
+
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.kotak img {
+  width: 250px;
+  height: 250px;
+
+  object-fit: cover;
+
+  border-radius: 20px;
+  border: 3px solid grey;
+
+  box-shadow: 0 8px 20px rgba(255,255,255,0.15);
+
+  transition: 0.3s ease;
+}
+
+.kotak img:hover {
+  transform: scale(1.05);
+}
+
+.kotak img:nth-child(5) {
+  grid-column: 1 / 3;
+  justify-self: center;
+}
+
+.tengah {
+  text-align: center;
+  padding: 25px;
+  margin: 20px 0;
+}
+
+.tengah h2 {
+  margin-bottom: 15px;
+  font-size: 32px;
+}
+
+.tengah p {
+  margin-top: 15px;
+  line-height: 1.8;
+  padding: 0 20px;
+  font-size: 18px;
+}
+
+.biodata {
+  background: black;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.biodata img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 3px solid grey;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+.gamba1 {
+  width: 250px;
+  border-radius: 10px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  display: block;
+  margin: 20px auto;
+}
+
+.picture-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+}
+
+.picture-box img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+
+  border-radius: 20px;
+  border: 3px solid white;
+
+  box-shadow: 0 8px 25px rgba(255,255,255,0.2);
+
+  transition: 0.3s ease;
+}
+
+.picture-box img:hover {
+  transform: scale(1.05);
+}
+
+/* RUGBY SECTION */
+.rugby-section {
+    padding: 40px;
+}
+
+.title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.desc {
+    font-size: 18px;
+    line-height: 1.8;   /* TEXT SPACING JAGA */
+    margin-bottom: 20px;
+}
+
+/* IMAGES */
+.rugby-images {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.rugby-img1,
+.rugby-img2 {
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.edu-section {
+    padding: 40px;
+}
+
+.edu-title {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.edu-desc {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* EACH SCHOOL BLOCK */
+.edu-block {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-left: 5px solid #333;
+}
+
+.edu-school {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.edu-year {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.edu-text {
+    line-height: 1.8;   /* TEXT SPACING JAGA */
+    font-size: 16px;
+}
+
+/* IMAGES */
+.edu-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.edu-images img {
+    width: 60%;
+    max-width: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.edu-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.edu-gallery img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+
+    border-radius: 15px;
+    border: 3px solid grey;
+
+    box-shadow: 0 8px 20px rgba(255,255,255,0.15);
+
+    transition: 0.3s ease;
+}
+
+.edu-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* TITLE */
+.contact-title {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 32px;
+}
+
+/* CONTAINER */
+.contact-container {
+    width: 300px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* BOX */
+.contact-box {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+/* HOVER */
+.contact-box:hover {
+    background: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+.family-img {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 3px solid grey;
+    transition: 0.3s ease;
+}
+
+.experience-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.experience-box .edu-block {
+    width: 80%;
+    text-align: center;
+}
+
+.experience-box img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 10px;
+}
